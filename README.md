@@ -12,17 +12,10 @@ Neovim, VS Code, btop, Chromium, Hyprland borders, and the boot unlock.
 Omarchy 4:
 
 ```sh
-omarchy theme install https://github.com/<you>/omarchy-matrix-theme
+omarchy theme install https://github.com/BVisagie/omarchy-matrix-theme
 ```
 
-Until this lives on GitHub, copy it into place and apply:
-
-```sh
-rsync -a --delete \
-  --exclude .git --exclude scripts \
-  ./omarchy-matrix-theme/ ~/.config/omarchy/themes/matrix/
-omarchy theme set matrix
-```
+Or *Install > Style > Theme* in the Omarchy menu (`Super + Space`) and paste that URL.
 
 Backgrounds cycle with `Super + Ctrl + Space`.
 
