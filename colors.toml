@@ -1,0 +1,60 @@
+# Matrix (1999)
+# Phosphor-green simulation. Shadows lift olive, not gray.
+# Accent matches the digital rain: #00FF41.
+
+mode = "dark"
+
+accent = "#00FF41"
+cursor = "#E8FFE8"
+selection = "#0D3B14"
+muted = "#3D6B42"
+
+background = "#070B08"
+dark_background = "#040605"
+darker_background = "#010201"
+lighter_background = "#121A14"
+
+foreground = "#B7E4B8"
+dark_foreground = "#3D6B42"
+light_foreground = "#D4F5D4"
+bright_foreground = "#E8FFE8"
+
+selection_foreground = "#E8FFE8"
+selection_background = "#0D3B14"
+
+hyprland_active_border = "rgba(00FF41ee) rgba(007A28aa) 45deg"
+
+# Syntax stays inside the film: greens, sickly lime, brick red, steel blue.
+red = "#B33A3A"
+yellow = "#C6C84A"
+orange = "#8FBF4A"
+green = "#00B32C"
+cyan = "#4A9A78"
+blue = "#3D6B7A"
+magenta = "#5A7A5A"
+brown = "#2A3D28"
+
+bright_red = "#E05555"
+bright_yellow = "#E4E87A"
+bright_green = "#00FF41"
+bright_cyan = "#7AB8A4"
+bright_blue = "#6A8A9A"
+bright_magenta = "#8A9A8A"
+
+# ANSI slots for terminals that still read color0-15.
+color0 = "#070B08"
+color1 = "#B33A3A"
+color2 = "#00B32C"
+color3 = "#C6C84A"
+color4 = "#3D6B7A"
+color5 = "#5A7A5A"
+color6 = "#4A9A78"
+color7 = "#B7E4B8"
+color8 = "#3D6B42"
+color9 = "#E05555"
+color10 = "#00FF41"
+color11 = "#E4E87A"
+color12 = "#6A8A9A"
+color13 = "#8A9A8A"
+color14 = "#7AB8A4"
+color15 = "#E8FFE8"
