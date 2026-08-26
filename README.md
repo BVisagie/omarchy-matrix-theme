@@ -44,6 +44,8 @@ steel blue. No magenta nightclub.
 
 ## Backgrounds
 
+All eight are **3840×2160**.
+
 1. **Falling code** — dense katakana rain, rendered, not painted
 2. **Trace program** — more black between the streams
 3. **Deeper down** — finer columns
@@ -53,8 +55,11 @@ steel blue. No magenta nightclub.
 7. **CRT glass** — phosphor on curved glass
 8. **Wet rooftop** — water towers, green city
 
-Rain wallpapers are generated from real halfwidth katakana with
-`scripts/render_rain.py` (Cairo + Pango, Noto Sans CJK JP).
+Rain wallpapers are drawn at native 4K from real halfwidth katakana
+(`scripts/render_rain.py`, Cairo + Pango, Noto Sans CJK JP). The five
+filmic stills are super-resolved from their 1280×720 masters with
+Real-ESRGAN, then downsampled to 4K so the grain and 1999 grade stay,
+without the softness of a stretch.
 
 ## Lock screen
 

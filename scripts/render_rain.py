@@ -21,7 +21,7 @@ GLYPHS = (
     "0123456789"
 )
 
-W, H = 2560, 1440
+W, H = 3840, 2160
 FONT = "Noto Sans CJK JP"
 
 
@@ -136,12 +136,13 @@ def main() -> None:
     out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(os.path.dirname(__file__), "..", "backgrounds")
     os.makedirs(out, exist_ok=True)
     jobs = [
-        ("1-falling-code.png", 1999, 18, 0.92),
-        ("2-trace-program.png", 3103, 20, 0.72),
-        ("3-deeper-down.png", 101, 16, 0.98),
+        ("1-falling-code.png", 1999, 24, 0.92),
+        ("2-trace-program.png", 3103, 28, 0.72),
+        ("3-deeper-down.png", 101, 20, 0.98),
     ]
     for name, seed, cell, density in jobs:
-        render(os.path.join(out, name), seed, cell, density)
+        png = os.path.join(out, name)
+        render(png, seed, cell, density)
 
 
 if __name__ == "__main__":
