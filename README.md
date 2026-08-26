@@ -3,9 +3,8 @@
 An Omarchy 4 (Quattro) theme for the 1999 film.
 
 Phosphor green on void black. Olive lift in the shadows, not gray. The
-accent is the rain: `#00FF41`. It is meant to sit with the digital-rain
-lock screen, but it is a full desktop theme — bar, menus, terminals,
-Neovim, VS Code, btop, Chromium, Hyprland borders, and the boot unlock.
+accent is CRT green (`#3CBF5C`), not laser lime — the lock-screen rain
+can stay hotter; the desktop sits in the body of the stream.
 
 ## Install
 
@@ -23,14 +22,14 @@ Backgrounds cycle with `Super + Ctrl + Space`.
 
 | Role | Hex | In the film |
 | --- | --- | --- |
-| Background | `#070B08` | The simulation's black, with a green lift |
-| Accent | `#00FF41` | Digital rain |
-| Foreground | `#B7E4B8` | Phosphor text |
-| Muted | `#3D6B42` | Dim trails, comments |
-| Selection | `#0D3B14` | Highlighted code |
-| Red | `#B33A3A` | The pill, the alarm, ACCESS DENIED |
-| Yellow | `#C6C84A` | Sickly fluorescent |
-| Blue | `#3D6B7A` | A leak of the real world |
+| Background | `#080C09` | The simulation's black, with a green lift |
+| Accent | `#3CBF5C` | CRT phosphor, not the rain's white-hot head |
+| Foreground | `#8BC98C` | Terminal text, the body of the stream |
+| Muted | `#3A6840` | Dim trails, comments |
+| Selection | `#143318` | Highlighted code |
+| Red | `#A83A3A` | The pill, the alarm, ACCESS DENIED |
+| Yellow | `#B8BA48` | Sickly fluorescent |
+| Cyan | `#4BB56A` | Prompt, still in-world |
 
 Syntax highlighting stays inside that world: greens, a brick red, a
 steel blue. No magenta nightclub.
@@ -71,7 +70,7 @@ Omarchy generates the rest from `colors.toml` when the theme is applied:
 - Neovim (Aether), Helix, VS Code, Obsidian
 - btop, Chromium
 - Hyprland active border
-- Keyboard RGB (`00FF41`)
+- Keyboard RGB (`3CBF5C`)
 - Icons: `Yaru-olive-dark`
 
 ## License
