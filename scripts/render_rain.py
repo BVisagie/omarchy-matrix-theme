@@ -59,13 +59,35 @@ def paint_glyph(ctx, cache, ch, x, y, rgb, alpha):
     ctx.restore()
 
 
-def layer(ctx, cache, cell, rng, density, speed_bias, dim, head_boost):
+PALETTES = {
+    "matrix": {
+        "bg": "020503",
+        "head": "E8FFE8",
+        "head_dim": "C8FFC8",
+        "body": "00FF41",
+        "mid": "00B32C",
+        "dark": "003B00",
+    },
+    # White-phosphor CRT. Same rain, no green.
+    "mono": {
+        "bg": "050505",
+        "head": "F4F4F4",
+        "head_dim": "D0D0D0",
+        "body": "C4C4C4",
+        "mid": "8A8A8A",
+        "dark": "3A3A3A",
+    },
+}
+
+
+def layer(ctx, cache, cell, rng, density, speed_bias, dim, head_boost, palette):
     cols = math.ceil(W / cell)
     rows = math.ceil(H / cell)
-    head = hex_rgb("E8FFE8")
-    body = hex_rgb("00FF41")
-    mid = hex_rgb("00B32C")
-    dark = hex_rgb("003B00")
+    head = hex_rgb(palette["head"])
+    head_dim = hex_rgb(palette["head_dim"])
+    body = hex_rgb(palette["body"])
+    mid = hex_rgb(palette["mid"])
+    dark = hex_rgb(palette["dark"])
     for c in range(cols):
         if rng.random() > density:
             continue
@@ -80,7 +102,7 @@ def layer(ctx, cache, cell, rng, density, speed_bias, dim, head_boost):
             ch = rng.choice(GLYPHS)
             fade = 1.0 - (t / length)
             if t == 0:
-                rgb, a = head if bright else hex_rgb("C8FFC8"), 0.95 * dim * head_boost
+                rgb, a = head if bright else head_dim, 0.95 * dim * head_boost
             elif t == 1:
                 rgb, a = body, 0.9 * dim
             elif fade > 0.55:
@@ -109,11 +131,12 @@ def vignette(ctx):
     ctx.paint()
 
 
-def render(path: str, seed: int, near_cell: int, density: float) -> None:
+def render(path: str, seed: int, near_cell: int, density: float, palette_name: str = "matrix") -> None:
+    palette = PALETTES[palette_name]
     rng = random.Random(seed)
     surf = cairo.ImageSurface(cairo.FORMAT_RGB24, W, H)
     ctx = cairo.Context(surf)
-    ctx.set_source_rgb(*hex_rgb("020503"))
+    ctx.set_source_rgb(*hex_rgb(palette["bg"]))
     ctx.paint()
 
     far_cell = near_cell + 8
@@ -122,9 +145,9 @@ def render(path: str, seed: int, near_cell: int, density: float) -> None:
     mid_cache = cache_glyphs(mid_cell)
     near_cache = cache_glyphs(near_cell)
 
-    layer(ctx, far_cache, far_cell, rng, density * 0.55, 0.4, 0.28, 0.7)
-    layer(ctx, mid_cache, mid_cell, rng, density * 0.75, 0.7, 0.55, 0.9)
-    layer(ctx, near_cache, near_cell, rng, density, 1.0, 1.0, 1.15)
+    layer(ctx, far_cache, far_cell, rng, density * 0.55, 0.4, 0.28, 0.7, palette)
+    layer(ctx, mid_cache, mid_cell, rng, density * 0.75, 0.7, 0.55, 0.9, palette)
+    layer(ctx, near_cache, near_cell, rng, density, 1.0, 1.0, 1.15, palette)
 
     scanlines(ctx, 0.16)
     vignette(ctx)
@@ -136,13 +159,12 @@ def main() -> None:
     out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(os.path.dirname(__file__), "..", "backgrounds")
     os.makedirs(out, exist_ok=True)
     jobs = [
-        ("1-falling-code.png", 1999, 24, 0.92),
-        ("2-trace-program.png", 3103, 28, 0.72),
-        ("3-deeper-down.png", 101, 20, 0.98),
+        ("1-falling-code.png", 1999, 24, 0.92, "matrix"),
+        ("2-mono-rain.png", 1999, 24, 0.92, "mono"),
     ]
-    for name, seed, cell, density in jobs:
+    for name, seed, cell, density, palette_name in jobs:
         png = os.path.join(out, name)
-        render(png, seed, cell, density)
+        render(png, seed, cell, density, palette_name)
 
 
 if __name__ == "__main__":
