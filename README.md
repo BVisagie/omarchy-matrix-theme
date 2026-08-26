@@ -39,8 +39,8 @@ steel blue. No magenta nightclub.
 
 All five are **3840×2160**.
 
-1. **Falling code** — dense katakana rain
-2. **Mono rain** — the same rain on a white-phosphor CRT
+1. **Mono rain** — white-phosphor CRT (default)
+2. **Falling code** — the same rain in Matrix green
 3. **Green street** — empty city, rain, CRT color grade
 4. **The office** — cubicles, CRTs, fluorescent
 5. **Hotel corridor** — 1999 carpet, rain on the far window

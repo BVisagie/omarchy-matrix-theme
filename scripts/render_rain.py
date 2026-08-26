@@ -159,8 +159,8 @@ def main() -> None:
     out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(os.path.dirname(__file__), "..", "backgrounds")
     os.makedirs(out, exist_ok=True)
     jobs = [
-        ("1-falling-code.png", 1999, 24, 0.92, "matrix"),
-        ("2-mono-rain.png", 1999, 24, 0.92, "mono"),
+        ("1-mono-rain.png", 1999, 24, 0.92, "mono"),
+        ("2-falling-code.png", 1999, 24, 0.92, "matrix"),
     ]
     for name, seed, cell, density, palette_name in jobs:
         png = os.path.join(out, name)
