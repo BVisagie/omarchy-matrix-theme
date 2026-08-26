@@ -31,8 +31,8 @@ Backgrounds cycle with `Super + Ctrl + Space`.
 | Yellow | `#B8BA48` | Sickly fluorescent |
 | Cyan | `#4BB56A` | Prompt, still in-world |
 
-Syntax highlighting stays inside that world: greens, a brick red, a
-steel blue. No magenta nightclub.
+Syntax highlighting stays inside that world: phosphor greens, a brick
+red, a little teal for directories and the prompt. No magenta nightclub.
 
 ## Backgrounds
 
@@ -58,8 +58,9 @@ This theme paints the shell lock chrome green. Pair it with the custom
 omarchy-shell lock setDesign my-rain
 ```
 
-The Rain design hardcodes the same phosphor green, so the lock stays
-in-world even if you hop themes.
+The Rain design hardcodes the hotter cascade green (`#00FF41`), so the
+lock stays in-world even if you hop themes. The desktop uses the dimmer
+CRT accent.
 
 ## What it themes
 
