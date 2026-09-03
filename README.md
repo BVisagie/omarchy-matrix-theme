@@ -6,6 +6,8 @@ Phosphor green on void black. Olive lift in the shadows, not gray. The
 accent is CRT green (`#3CBF5C`), not laser lime — the lock-screen rain
 can stay hotter; the desktop sits in the body of the stream.
 
+![Desktop preview — hotel corridor wallpaper, phosphor terminals, Omarchy shell](preview.png)
+
 ## Install
 
 Omarchy 4:
