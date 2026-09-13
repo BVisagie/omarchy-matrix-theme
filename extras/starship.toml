@@ -1,0 +1,55 @@
+# ANSI colors follow the terminal palette, including after a theme change.
+add_newline = true
+command_timeout = 250
+format = '$username$hostname$directory$git_branch$git_status$cmd_duration$line_break$status$character'
+
+[username]
+show_always = false
+style_root = 'bold red'
+format = '[$user]($style) '
+
+[hostname]
+ssh_only = true
+format = '[ssh:$hostname](bold yellow) '
+
+[directory]
+style = 'bold cyan'
+truncation_length = 3
+truncation_symbol = '…/'
+read_only = ' [ro]'
+read_only_style = 'yellow'
+format = '[$path]($style)[$read_only]($read_only_style) '
+
+[git_branch]
+symbol = ''
+style = 'green'
+format = '[git:$branch]($style) '
+
+[git_status]
+style = 'yellow'
+format = '([$all_status$ahead_behind]($style) )'
+conflicted = 'CONFLICT '
+modified = '!${count} '
+staged = '+${count} '
+untracked = '?${count} '
+deleted = '-${count} '
+renamed = '»${count} '
+stashed = '*${count} '
+ahead = '↑${count} '
+behind = '↓${count} '
+diverged = '↑${ahead_count}↓${behind_count} '
+
+[cmd_duration]
+min_time = 2000
+style = 'bright-black'
+format = '[$duration]($style) '
+
+[status]
+disabled = false
+style = 'bold red'
+format = '[exit:$status]($style) '
+
+[character]
+success_symbol = '[❯](bold green)'
+error_symbol = '[❯](bold red)'
+vimcmd_symbol = '[◂](bold cyan)'
