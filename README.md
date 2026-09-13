@@ -5,11 +5,10 @@ An Omarchy 4 (Quattro) theme for the 1999 film.
 Phosphor green on void black, with olive shadows. The accent is CRT green
 (`#3CBF5C`), with brighter highlights reserved for the code-rain wallpapers.
 
-![Live desktop — After Hours wallpaper and the optional operator terminal](docs/desktop-preview.png)
+![Live desktop — After Hours wallpaper and the optional operator terminal](preview.png)
 
 Live Omarchy 4 desktop, captured at 3840×2160 and 150% display scaling. The
 optional Ghostty profile is shown at 14pt with phosphor glow and sample text.
-[Menu preview](docs/menu-preview.png).
 
 ## Install
 
@@ -123,7 +122,7 @@ The street, office, and hotel stills were super-resolved from their 1280×720
 masters with Real-ESRGAN. After Hours was generated at 1672×941, upscaled with
 the photographic `realesrgan-x4plus` model, then downsampled and blended with the
 source resize to retain texture. These are upscaled artworks, not native 4K
-generations. [Wallpaper review, source, prompt, and export recipe](docs/wallpaper-review/README.md).
+generations.
 
 ### Rebuild the rain
 

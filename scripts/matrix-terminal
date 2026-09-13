@@ -32,7 +32,8 @@ def ghostty_options(colors, font_size, phosphor):
 
 def foot_options(colors, font_size):
     options = [f"font=JetBrainsMono Nerd Font:size={font_size}", "pad=18x16",
-               "cursor.style=block", "cursor.blink=no", "colors-dark.alpha=1.0"]
+               "cursor.style=block", "cursor.blink=no", "initial-color-theme=dark",
+               "colors-dark.alpha=1.0"]
     for key in ("background", "foreground", "selection-background", "selection-foreground"):
         options.append(f"colors-dark.{key}={colors[key.replace('-', '_')].lstrip('#')}")
     options.append(f"colors-dark.cursor={colors['background'][1:]} {colors['cursor'][1:]}")
