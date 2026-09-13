@@ -5,10 +5,11 @@ An Omarchy 4 (Quattro) theme for the 1999 film.
 Phosphor green on void black, with olive shadows. The accent is CRT green
 (`#3CBF5C`), with brighter highlights reserved for the code-rain wallpapers.
 
-![Live desktop — After Hours wallpaper and the optional operator terminal](preview.png)
+![Live desktop — After Hours wallpaper with rain, Neovim, and btop](preview.png)
 
-Live Omarchy 4 desktop, captured at 3840×2160 and 150% display scaling. The
-optional Ghostty profile is shown at 14pt with phosphor glow and sample text.
+Live Omarchy 4 desktop, captured at 3840×2160 and 150% display scaling. After Hours
+fills the corridor; falling-code rain, the optional phosphor shader in Neovim, and
+themed btop sit in the dark.
 
 ## Install
 
