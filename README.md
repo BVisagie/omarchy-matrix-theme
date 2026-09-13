@@ -27,7 +27,7 @@ The base theme contains colors, shell styling, and static backgrounds. The
 [optional operator terminal](#operator-terminal) is launched separately.
 
 Compatibility: targets **Omarchy 4 / Quickshell**, checked against the installed
-**4.0.0.alpha** templates and desktop. Omarchy 3's Waybar/Mako setup is not
+**4.0.3-1** templates and desktop. Omarchy 3's Waybar/Mako setup is not
 covered by these overrides. The published theme remains **Matrix**; the local
 development copy used for these screenshots was named **Matrix Operator**.
 
@@ -184,7 +184,7 @@ shell colors, argument handling, invalid renderer input, and GLSL compilation.
 The shader test requires `glslangValidator` and skips locally if it is absent;
 CI installs it. Terminal `--check` commands validate configs without opening a window.
 
-Local validation uses Omarchy 4.0.0.alpha, Ghostty 1.3.1, Foot 1.28.0, and Starship
+Local validation uses Omarchy 4.0.3-1, Ghostty 1.3.1, Foot 1.28.0, and Starship
 1.26.0. Repository staging was exercised in an isolated directory, including the
 generated terminal configs and shell overrides. Desktop review covers the menu,
 lock preview, terminal profiles, and Ghostty glow on an AMD Radeon RX 7900 XTX.
