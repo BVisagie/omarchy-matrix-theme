@@ -31,14 +31,15 @@ cannot update to it with a normal `git pull`. Personal backgrounds stored in
 Six JPEGs at **3840×2160**, with **Hotel Corridor** first:
 
 1. **Hotel Corridor** — worn wallpaper, timber doors, brass sconces, and a rainy end window.
-2. **Falling Code** — the original dense, layered green glyph streams.
-3. **Mono Rain** — the original silver rendition of the same glyph composition.
-4. **Green Street** — an empty intersection and wet-road reflections.
-5. **The Office** — one active CRT beside a dark cubicle aisle.
-6. **After Hours** — a back-office corridor, tired fluorescents, and a partly hidden CRT.
+2. **Green Street** — an empty intersection and wet-road reflections.
+3. **The Office** — one active CRT beside a dark cubicle aisle.
+4. **After Hours** — a back-office corridor, tired fluorescents, and a partly hidden CRT.
+5. **Falling Code** — the original dense, layered green glyph streams.
+6. **Mono Rain** — the original silver rendition of the same glyph composition.
 
 Hotel is selected on a fresh install without personal-background overrides.
-Reapplying an active theme can advance to the next image.
+The two glyph wallpapers come last. Reapplying an active theme can advance to
+the next image.
 
 The four cinematic scenes are **AI-upscaled artworks**: original 1672×941 generations were processed
 with SeedVR2 at 4×, then exported from 6688×3764 masters as sRGB, quality-95

@@ -19,32 +19,6 @@
       "source_sha256": "a39ff0dc80b5de1e717c2418c2e9b02cd7f0f4c452dc7cd4332cff77a637221e"
     },
     {
-      "path": "backgrounds/1-falling-code.jpg",
-      "dimensions": [
-        3840,
-        2160
-      ],
-      "sha256": "7324665257aab7220d7f8e1aa2d44c47507a8976d5cba49aafe5901bb8e17e0c",
-      "description": "Falling Code: original dense green glyph streams, rendered natively at 4K before the wallpaper overhaul.",
-      "source": "https://github.com/BVisagie/omarchy-matrix-theme-archive/blob/01b09c3603db68f4623923cb79d82bc49369075a/backgrounds/1-falling-code.jpg",
-      "renderer": "https://github.com/BVisagie/omarchy-matrix-theme-archive/blob/01b09c3603db68f4623923cb79d82bc49369075a/scripts/render_rain.py",
-      "seed": 1999,
-      "restoration": "Exact pre-overhaul JPEG bytes; no regeneration, resizing, or recompression."
-    },
-    {
-      "path": "backgrounds/2-mono-rain.jpg",
-      "dimensions": [
-        3840,
-        2160
-      ],
-      "sha256": "557a3ee37c25bc7e65263def646652237f264c812120385b3d45465653643f77",
-      "description": "Mono Rain: original grayscale rendition of the same dense glyph composition, rendered natively at 4K before the wallpaper overhaul.",
-      "source": "https://github.com/BVisagie/omarchy-matrix-theme-archive/blob/01b09c3603db68f4623923cb79d82bc49369075a/backgrounds/2-mono-rain.jpg",
-      "renderer": "https://github.com/BVisagie/omarchy-matrix-theme-archive/blob/01b09c3603db68f4623923cb79d82bc49369075a/scripts/render_rain.py",
-      "seed": 1999,
-      "restoration": "Exact pre-overhaul JPEG bytes; no regeneration, resizing, or recompression."
-    },
-    {
       "path": "backgrounds/3-green-street.jpg",
       "dimensions": [
         3840,
@@ -85,6 +59,32 @@
         941
       ],
       "source_sha256": "15741d1a9086e55e5758887c40445dd9fa184b6086bd2cc1d276783f07eedf4f"
+    },
+    {
+      "path": "backgrounds/7-falling-code.jpg",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "7324665257aab7220d7f8e1aa2d44c47507a8976d5cba49aafe5901bb8e17e0c",
+      "description": "Falling Code: original dense green glyph streams, rendered natively at 4K before the wallpaper overhaul.",
+      "source": "https://github.com/BVisagie/omarchy-matrix-theme-archive/blob/01b09c3603db68f4623923cb79d82bc49369075a/backgrounds/1-falling-code.jpg",
+      "renderer": "https://github.com/BVisagie/omarchy-matrix-theme-archive/blob/01b09c3603db68f4623923cb79d82bc49369075a/scripts/render_rain.py",
+      "seed": 1999,
+      "restoration": "Exact pre-overhaul JPEG bytes; no regeneration, resizing, or recompression."
+    },
+    {
+      "path": "backgrounds/8-mono-rain.jpg",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "557a3ee37c25bc7e65263def646652237f264c812120385b3d45465653643f77",
+      "description": "Mono Rain: original grayscale rendition of the same dense glyph composition, rendered natively at 4K before the wallpaper overhaul.",
+      "source": "https://github.com/BVisagie/omarchy-matrix-theme-archive/blob/01b09c3603db68f4623923cb79d82bc49369075a/backgrounds/2-mono-rain.jpg",
+      "renderer": "https://github.com/BVisagie/omarchy-matrix-theme-archive/blob/01b09c3603db68f4623923cb79d82bc49369075a/scripts/render_rain.py",
+      "seed": 1999,
+      "restoration": "Exact pre-overhaul JPEG bytes; no regeneration, resizing, or recompression."
     }
   ],
   "preview": {
