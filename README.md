@@ -35,7 +35,7 @@ Six JPEGs at **3840×2160**, with **Hotel Corridor** first:
 3. **The Office** — one active CRT beside a dark cubicle aisle.
 4. **After Hours** — a back-office corridor, tired fluorescents, and a partly hidden CRT.
 5. **Falling Code** — the original dense, layered green glyph streams.
-6. **Mono Rain** — the original silver rendition of the same glyph composition.
+6. **Mono Rain** — the original grayscale rendition of the same glyph composition.
 
 Hotel is selected on a fresh install without personal-background overrides.
 The two glyph wallpapers come last. Reapplying an active theme can advance to
