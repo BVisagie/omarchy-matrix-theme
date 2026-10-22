@@ -1,7 +1,7 @@
 {
   "archive": "https://github.com/BVisagie/omarchy-matrix-theme-archive/tree/28efe75dfea0819f45472c2fc98ededfcdccdedb",
   "generation_records": "https://github.com/BVisagie/omarchy-matrix-theme-archive/blob/28efe75dfea0819f45472c2fc98ededfcdccdedb/docs/background-provenance.json",
-  "description": "Original AI-generated cinematic artwork, upscaled with SeedVR2 from 1672x941 sources through 6688x3764 masters; sRGB JPEG exports at quality 95 with 4:4:4 chroma.",
+  "description": "Original AI-generated cinematic artwork, upscaled with SeedVR2 from 1672x941 sources through 6688x3764 masters, plus native 4K procedural code-rain glyphs; sRGB JPEG exports at quality 95 with 4:4:4 chroma.",
   "default_background": "backgrounds/0-hotel-corridor.jpg",
   "wallpapers": [
     {
@@ -17,6 +17,30 @@
         941
       ],
       "source_sha256": "a39ff0dc80b5de1e717c2418c2e9b02cd7f0f4c452dc7cd4332cff77a637221e"
+    },
+    {
+      "path": "backgrounds/1-falling-code.jpg",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "249f606cb708d708ba84e3a304375e9f29cacfb88070d9b6584a681e34eaa359",
+      "description": "Falling Code: native procedural glyph artwork, rendered directly at 4K with Cairo/Pango.",
+      "source": "https://github.com/BVisagie/omarchy-matrix-theme-archive/blob/28efe75dfea0819f45472c2fc98ededfcdccdedb/extras/backgrounds-code-4k/1-falling-code.jpg",
+      "renderer": "https://github.com/BVisagie/omarchy-matrix-theme-archive/blob/28efe75dfea0819f45472c2fc98ededfcdccdedb/scripts/render_rain.py",
+      "seed": 1999
+    },
+    {
+      "path": "backgrounds/2-mono-rain.jpg",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "9603bdeeeb1804dbdab8545aa5269a293bf466c300d6a9d7976efc4d9357bf12",
+      "description": "Mono Rain: native grayscale procedural glyph artwork, rendered directly at 4K with Cairo/Pango.",
+      "source": "https://github.com/BVisagie/omarchy-matrix-theme-archive/blob/28efe75dfea0819f45472c2fc98ededfcdccdedb/extras/backgrounds-code-4k/2-mono-rain.jpg",
+      "renderer": "https://github.com/BVisagie/omarchy-matrix-theme-archive/blob/28efe75dfea0819f45472c2fc98ededfcdccdedb/scripts/render_rain.py",
+      "seed": 1999
     },
     {
       "path": "backgrounds/3-green-street.jpg",

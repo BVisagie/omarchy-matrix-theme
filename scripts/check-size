@@ -10,7 +10,8 @@ MIB = 1024 * 1024
 TREE_LIMIT = 20 * MIB
 HISTORY_LIMIT = 25 * MIB
 IMAGES = {
-    "backgrounds/0-hotel-corridor.jpg", "backgrounds/3-green-street.jpg",
+    "backgrounds/0-hotel-corridor.jpg", "backgrounds/1-falling-code.jpg",
+    "backgrounds/2-mono-rain.jpg", "backgrounds/3-green-street.jpg",
     "backgrounds/4-the-office.jpg", "backgrounds/6-after-hours.jpg",
     "preview.png", "preview-unlock.png", "unlock.png",
 }

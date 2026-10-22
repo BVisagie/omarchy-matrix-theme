@@ -28,25 +28,29 @@ cannot update to it with a normal `git pull`. Personal backgrounds stored in
 
 ## Wallpapers
 
-Four cinematic JPEGs at **3840×2160**, with **Hotel Corridor** first:
+Six JPEGs at **3840×2160**, with **Hotel Corridor** first:
 
 1. **Hotel Corridor** — worn wallpaper, timber doors, brass sconces, and a rainy end window.
-2. **Green Street** — an empty intersection and wet-road reflections.
-3. **The Office** — one active CRT beside a dark cubicle aisle.
-4. **After Hours** — a back-office corridor, tired fluorescents, and a partly hidden CRT.
+2. **Falling Code** — green glyph streams with interrupted trails and a quiet working area.
+3. **Mono Rain** — sparse silver glyph streams in an independent grayscale composition.
+4. **Green Street** — an empty intersection and wet-road reflections.
+5. **The Office** — one active CRT beside a dark cubicle aisle.
+6. **After Hours** — a back-office corridor, tired fluorescents, and a partly hidden CRT.
 
 Hotel is selected on a fresh install without personal-background overrides.
 Reapplying an active theme can advance to the next image.
 
-These are **AI-upscaled artworks**: original 1672×941 generations were processed
+The four cinematic scenes are **AI-upscaled artworks**: original 1672×941 generations were processed
 with SeedVR2 at 4×, then exported from 6688×3764 masters as sRGB, quality-95
-JPEGs with 4:4:4 chroma. The [provenance manifest](PROVENANCE.json) records their
-hashes and sources. The desktop screenshot is a real screen capture.
+JPEGs with 4:4:4 chroma. Falling Code and Mono Rain are rendered directly at
+native 4K from procedural glyphs. Both are included in the normal wallpaper
+cycle. The [provenance manifest](PROVENANCE.json) records hashes and sources.
+The desktop screenshot is a real screen capture.
 
 Optional artwork is downloaded separately from [the release](https://github.com/BVisagie/omarchy-matrix-theme/releases/tag/v1.0.0):
 
 - [6K cinematic wallpapers](https://github.com/BVisagie/omarchy-matrix-theme/releases/download/v1.0.0/matrix-wallpapers-6k.zip) — 6144×3456 companions.
-- [Code rain at native 4K and 8K](https://github.com/BVisagie/omarchy-matrix-theme/releases/download/v1.0.0/matrix-code-rain-4k-8k.zip) — Falling Code and Mono Rain.
+- [Code-rain companions](https://github.com/BVisagie/omarchy-matrix-theme/releases/download/v1.0.0/matrix-code-rain-4k-8k.zip) — native 8K Falling Code and Mono Rain, plus copies of the bundled 4K files.
 - [Original artwork and generation records](https://github.com/BVisagie/omarchy-matrix-theme/releases/download/v1.0.0/matrix-artwork-sources.zip).
 - [SHA-256 checksums](https://github.com/BVisagie/omarchy-matrix-theme/releases/download/v1.0.0/SHA256SUMS).
 
@@ -94,8 +98,8 @@ Compatibility targets **Omarchy 4 / Quickshell**. Omarchy 3 is not covered.
 
 ## Keeping the download small
 
-The theme checkout is about **18.2 MiB**, including the full-resolution desktop
-preview and all four wallpapers. CI enforces a **20 MiB tracked-file budget**
+The theme checkout is about **18.8 MiB**, including the full-resolution desktop
+preview and all six wallpapers. CI enforces a **20 MiB tracked-file budget**
 and a **25 MiB Git pack budget**, including ordinary branches and tags.
 
 Source art, experiments, comparisons, rendering tools, and earlier Git history
@@ -115,11 +119,11 @@ python3 scripts/check-size --history
 ./scripts/matrix-terminal --phosphor --check
 ```
 
-The history check requires a full clone. Tests cover the four-scene cycle,
+The history check requires a full clone. Tests cover the six-wallpaper cycle,
 Hotel-first ordering, image dimensions and provenance, palette contrast,
 shell colors, terminal argument handling, and shader compilation.
 
 ## License
 
-MIT. Cinematic stills are original generations; optional rain is original
+MIT. Cinematic stills are original generations; code rain is original
 code. The unlock mark is the Omarchy geometry recolored to phosphor green.
