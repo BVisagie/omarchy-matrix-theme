@@ -33,12 +33,13 @@ class ThemeTests(unittest.TestCase):
         supported = {".jpg", ".jpeg", ".png", ".gif", ".bmp", ".webp"}
         wallpapers = sorted(path for path in (ROOT / "backgrounds").iterdir()
                             if path.suffix.lower() in supported)
-        self.assertEqual({path.name for path in wallpapers}, {
+        self.assertEqual([path.name for path in wallpapers], [
             "0-hotel-corridor.jpg", "3-green-street.jpg",
             "4-the-office.jpg", "6-after-hours.jpg",
-        })
+            "7-falling-code.jpg", "8-mono-rain.jpg",
+        ])
         # Omarchy sorts shipped images and selects the first unmatched entry.
-        # Keep code rain outside this directory, including after a rebuild.
+        # Keep Hotel Corridor first and both original glyph backgrounds last.
         self.assertEqual(wallpapers[0].name, "0-hotel-corridor.jpg")
         for path in wallpapers:
             with self.subTest(wallpaper=path.name), Image.open(path) as image:

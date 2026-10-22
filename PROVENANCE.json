@@ -1,7 +1,7 @@
 {
   "archive": "https://github.com/BVisagie/omarchy-matrix-theme-archive/tree/28efe75dfea0819f45472c2fc98ededfcdccdedb",
   "generation_records": "https://github.com/BVisagie/omarchy-matrix-theme-archive/blob/28efe75dfea0819f45472c2fc98ededfcdccdedb/docs/background-provenance.json",
-  "description": "Original AI-generated cinematic artwork, upscaled with SeedVR2 from 1672x941 sources through 6688x3764 masters; sRGB JPEG exports at quality 95 with 4:4:4 chroma.",
+  "description": "Original AI-generated cinematic artwork, upscaled with SeedVR2 from 1672x941 sources through 6688x3764 masters, plus native 4K procedural code-rain glyphs; sRGB JPEG exports at quality 95 with 4:4:4 chroma.",
   "default_background": "backgrounds/0-hotel-corridor.jpg",
   "wallpapers": [
     {
@@ -59,6 +59,32 @@
         941
       ],
       "source_sha256": "15741d1a9086e55e5758887c40445dd9fa184b6086bd2cc1d276783f07eedf4f"
+    },
+    {
+      "path": "backgrounds/7-falling-code.jpg",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "7324665257aab7220d7f8e1aa2d44c47507a8976d5cba49aafe5901bb8e17e0c",
+      "description": "Falling Code: original dense green glyph streams, rendered natively at 4K before the wallpaper overhaul.",
+      "source": "https://github.com/BVisagie/omarchy-matrix-theme-archive/blob/01b09c3603db68f4623923cb79d82bc49369075a/backgrounds/1-falling-code.jpg",
+      "renderer": "https://github.com/BVisagie/omarchy-matrix-theme-archive/blob/01b09c3603db68f4623923cb79d82bc49369075a/scripts/render_rain.py",
+      "seed": 1999,
+      "restoration": "Exact pre-overhaul JPEG bytes; no regeneration, resizing, or recompression."
+    },
+    {
+      "path": "backgrounds/8-mono-rain.jpg",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "557a3ee37c25bc7e65263def646652237f264c812120385b3d45465653643f77",
+      "description": "Mono Rain: original grayscale rendition of the same dense glyph composition, rendered natively at 4K before the wallpaper overhaul.",
+      "source": "https://github.com/BVisagie/omarchy-matrix-theme-archive/blob/01b09c3603db68f4623923cb79d82bc49369075a/backgrounds/2-mono-rain.jpg",
+      "renderer": "https://github.com/BVisagie/omarchy-matrix-theme-archive/blob/01b09c3603db68f4623923cb79d82bc49369075a/scripts/render_rain.py",
+      "seed": 1999,
+      "restoration": "Exact pre-overhaul JPEG bytes; no regeneration, resizing, or recompression."
     }
   ],
   "preview": {
