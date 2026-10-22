@@ -1,0 +1,72 @@
+#!/usr/bin/env python3
+"""Keep the installable theme and its advertised Git history small."""
+import argparse
+from pathlib import Path
+import subprocess
+import sys
+
+ROOT = Path(__file__).resolve().parents[1]
+MIB = 1024 * 1024
+TREE_LIMIT = 20 * MIB
+HISTORY_LIMIT = 25 * MIB
+IMAGES = {
+    "backgrounds/0-hotel-corridor.jpg", "backgrounds/3-green-street.jpg",
+    "backgrounds/4-the-office.jpg", "backgrounds/6-after-hours.jpg",
+    "preview.png", "preview-unlock.png", "unlock.png",
+}
+
+
+def git(*args):
+    return subprocess.check_output(["git", "-C", str(ROOT), *args])
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--history", action="store_true",
+                        help="also measure a full clone pack; requires a non-shallow checkout")
+    args = parser.parse_args()
+    paths = [Path(name.decode()) for name in git("ls-files", "-z").split(b"\0") if name]
+    total = 0
+    for relative in paths:
+        name = relative.as_posix()
+        if relative.parts[0] in {"docs", "output"} or name.startswith("extras/background"):
+            raise ValueError(f"Production assets belong in the archive or release downloads: {name}")
+        if relative.suffix.lower() in {".jpg", ".jpeg", ".png", ".webp", ".gif", ".bmp", ".zip"} and name not in IMAGES:
+            raise ValueError(f"Unplanned download asset: {name}")
+        path = ROOT / relative
+        if path.is_symlink():
+            raise ValueError(f"Installed Git themes cannot supply symlink assets: {name}")
+        total += path.stat().st_size
+    print(f"Tracked theme: {total / MIB:.2f} MiB / {TREE_LIMIT / MIB:.0f} MiB")
+    if total > TREE_LIMIT:
+        raise ValueError("Theme exceeds its checkout budget")
+
+    if args.history:
+        if git("rev-parse", "--is-shallow-repository").strip() == b"true":
+            raise ValueError("Fetch full history before measuring it (CI uses fetch-depth: 0)")
+        # Include normal clone refs, but not local editor checkpoints or reflogs.
+        tips = git("for-each-ref", "--format=%(objectname)",
+                   "refs/heads", "refs/remotes", "refs/tags").splitlines()
+        tips.append(git("rev-parse", "HEAD").strip())
+        with subprocess.Popen(["git", "-C", str(ROOT), "pack-objects", "--revs",
+                               "--stdout", "--threads=2"],
+                              stdin=subprocess.PIPE, stdout=subprocess.PIPE) as process:
+            process.stdin.write(b"\n".join(sorted(set(tips))) + b"\n")
+            process.stdin.close()
+            packed = 0
+            while block := process.stdout.read(MIB):
+                packed += len(block)
+            if process.wait() != 0:
+                raise ValueError("Could not measure Git history")
+        print(f"Git clone pack estimate: {packed / MIB:.2f} MiB / {HISTORY_LIMIT / MIB:.0f} MiB")
+        if packed > HISTORY_LIMIT:
+            raise ValueError("History exceeds its download budget; archive old binary revisions separately")
+    return 0
+
+
+if __name__ == "__main__":
+    try:
+        sys.exit(main())
+    except (OSError, ValueError, subprocess.CalledProcessError) as error:
+        print(f"Size check failed: {error}", file=sys.stderr)
+        sys.exit(1)

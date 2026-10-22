@@ -1,0 +1,12 @@
+background                = "#080C09"
+background-alpha          = 1.0
+text                      = "#8BC98C"
+border                    = "#3CBF5C"
+border-alpha              = 1.0
+scrim                     = "#020302"
+scrim-alpha               = 0.65
+selected-background       = "#23482A"
+selected-background-alpha = 1.0
+selected-text             = "#C5E6C6"
+selected-border           = "#3CBF5C"
+selected-border-alpha     = 1.0

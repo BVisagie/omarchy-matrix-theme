@@ -1,0 +1,26 @@
+name: Validate theme
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          fetch-depth: 0
+      - name: Check theme and Git download budgets
+        run: python3 scripts/check-size --history
+      - name: Install artwork and shader validation dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends python3-pil glslang-tools
+      - name: Check palette, artwork provenance, launcher, and shader
+        run: /usr/bin/python3 -m unittest discover -s tests -v

@@ -1,0 +1,27 @@
+# A complete section: Omarchy replaces each shell.<section>.toml section.
+normal-color        = "#8BC98C"
+normal-fill-alpha   = 0.04
+normal-border       = "#678D6A"
+normal-border-width = 1
+normal-border-alpha = 0.65
+
+hover-cursor-color        = "#C5E6C6"
+hover-cursor-fill-alpha   = 0.08
+hover-cursor-border       = "#3CBF5C"
+hover-cursor-border-width = 1
+hover-cursor-border-alpha = 1.0
+
+focus-color        = "#C5E6C6"
+focus-fill-alpha   = 0.10
+focus-border       = "#3CBF5C"
+focus-border-width = 2
+focus-border-alpha = 1.0
+
+selected-color        = "#C5E6C6"
+selected-fill-alpha   = 0.18
+selected-border       = "#3CBF5C"
+selected-border-width = 1
+selected-border-alpha = 1.0
+
+pressed-fill-alpha   = 0.22
+selection-fill-alpha = 0.28

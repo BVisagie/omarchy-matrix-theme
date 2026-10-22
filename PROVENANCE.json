@@ -1,0 +1,74 @@
+{
+  "archive": "https://github.com/BVisagie/omarchy-matrix-theme-archive/tree/28efe75dfea0819f45472c2fc98ededfcdccdedb",
+  "generation_records": "https://github.com/BVisagie/omarchy-matrix-theme-archive/blob/28efe75dfea0819f45472c2fc98ededfcdccdedb/docs/background-provenance.json",
+  "description": "Original AI-generated cinematic artwork, upscaled with SeedVR2 from 1672x941 sources through 6688x3764 masters; sRGB JPEG exports at quality 95 with 4:4:4 chroma.",
+  "default_background": "backgrounds/0-hotel-corridor.jpg",
+  "wallpapers": [
+    {
+      "path": "backgrounds/0-hotel-corridor.jpg",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "7196ddb85610bb6b67daf2331c338b525131911685ae474af51e6084b73f6395",
+      "source": "https://github.com/BVisagie/omarchy-matrix-theme-archive/blob/28efe75dfea0819f45472c2fc98ededfcdccdedb/extras/background-sources/5-hotel-corridor.png",
+      "source_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "a39ff0dc80b5de1e717c2418c2e9b02cd7f0f4c452dc7cd4332cff77a637221e"
+    },
+    {
+      "path": "backgrounds/3-green-street.jpg",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "09ecfb136d06d78df977ff14ba9b5ed998a975897c025a571222316d27c72fdf",
+      "source": "https://github.com/BVisagie/omarchy-matrix-theme-archive/blob/28efe75dfea0819f45472c2fc98ededfcdccdedb/extras/background-sources/3-green-street.png",
+      "source_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "488c715b7e34bfbf1cdf72cd45cde68ccf3bda2b49d7a83a2909e143c9c90a3a"
+    },
+    {
+      "path": "backgrounds/4-the-office.jpg",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "bb7655b14d15a82db31420ebb1ef36bbb9d1eecd9a18f9362f64c6f440bc293c",
+      "source": "https://github.com/BVisagie/omarchy-matrix-theme-archive/blob/28efe75dfea0819f45472c2fc98ededfcdccdedb/extras/background-sources/4-the-office.png",
+      "source_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "170d40c6e4527d3fc10af4deeb520eda7ab51c249292b7990b923cbec9d9dba0"
+    },
+    {
+      "path": "backgrounds/6-after-hours.jpg",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "e0c9552d946273de81da3c716ba7af3d1db7ea7c0add18e7ddea24a724a95d08",
+      "source": "https://github.com/BVisagie/omarchy-matrix-theme-archive/blob/28efe75dfea0819f45472c2fc98ededfcdccdedb/extras/background-sources/6-after-hours.png",
+      "source_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "15741d1a9086e55e5758887c40445dd9fa184b6086bd2cc1d276783f07eedf4f"
+    }
+  ],
+  "preview": {
+    "path": "preview.png",
+    "dimensions": [
+      3840,
+      2160
+    ],
+    "display_scale": 1.5,
+    "description": "Real Omarchy 4.0.6 desktop capture with Hotel Corridor, terminal rain, Neovim, and btop.",
+    "sha256": "e7af7a3a95eb2d41dcc2ee873787dbb64252f947c2c4a0a7d2ef2a2111f3e95b"
+  }
+}

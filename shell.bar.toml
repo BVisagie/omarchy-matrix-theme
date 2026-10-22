@@ -1,0 +1,8 @@
+background       = "#050705"
+background-alpha = 1.0
+text             = "#8BC98C"
+# Omarchy shares this token between recording, updates, and other alerts.
+active           = "#D15D57"
+scale-with-font  = true
+size-horizontal  = 28
+size-vertical    = 30
