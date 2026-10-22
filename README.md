@@ -31,8 +31,8 @@ cannot update to it with a normal `git pull`. Personal backgrounds stored in
 Six JPEGs at **3840×2160**, with **Hotel Corridor** first:
 
 1. **Hotel Corridor** — worn wallpaper, timber doors, brass sconces, and a rainy end window.
-2. **Falling Code** — green glyph streams with interrupted trails and a quiet working area.
-3. **Mono Rain** — sparse silver glyph streams in an independent grayscale composition.
+2. **Falling Code** — the original dense, layered green glyph streams.
+3. **Mono Rain** — the original silver rendition of the same glyph composition.
 4. **Green Street** — an empty intersection and wet-road reflections.
 5. **The Office** — one active CRT beside a dark cubicle aisle.
 6. **After Hours** — a back-office corridor, tired fluorescents, and a partly hidden CRT.
@@ -42,15 +42,16 @@ Reapplying an active theme can advance to the next image.
 
 The four cinematic scenes are **AI-upscaled artworks**: original 1672×941 generations were processed
 with SeedVR2 at 4×, then exported from 6688×3764 masters as sRGB, quality-95
-JPEGs with 4:4:4 chroma. Falling Code and Mono Rain are rendered directly at
-native 4K from procedural glyphs. Both are included in the normal wallpaper
-cycle. The [provenance manifest](PROVENANCE.json) records hashes and sources.
+JPEGs with 4:4:4 chroma. Falling Code and Mono Rain retain their exact original
+native 4K files from before the overhaul, without regeneration or recompression.
+Both are included in the normal wallpaper cycle. The
+[provenance manifest](PROVENANCE.json) records hashes and sources.
 The desktop screenshot is a real screen capture.
 
 Optional artwork is downloaded separately from [the release](https://github.com/BVisagie/omarchy-matrix-theme/releases/tag/v1.0.0):
 
 - [6K cinematic wallpapers](https://github.com/BVisagie/omarchy-matrix-theme/releases/download/v1.0.0/matrix-wallpapers-6k.zip) — 6144×3456 companions.
-- [Code-rain companions](https://github.com/BVisagie/omarchy-matrix-theme/releases/download/v1.0.0/matrix-code-rain-4k-8k.zip) — native 8K Falling Code and Mono Rain, plus copies of the bundled 4K files.
+- [Experimental code-rain variants](https://github.com/BVisagie/omarchy-matrix-theme/releases/download/v1.0.0/matrix-code-rain-4k-8k.zip) — the later sparse redesigns at native 4K and 8K, distinct from the original compositions bundled here.
 - [Original artwork and generation records](https://github.com/BVisagie/omarchy-matrix-theme/releases/download/v1.0.0/matrix-artwork-sources.zip).
 - [SHA-256 checksums](https://github.com/BVisagie/omarchy-matrix-theme/releases/download/v1.0.0/SHA256SUMS).
 
@@ -98,8 +99,8 @@ Compatibility targets **Omarchy 4 / Quickshell**. Omarchy 3 is not covered.
 
 ## Keeping the download small
 
-The theme checkout is about **18.8 MiB**, including the full-resolution desktop
-preview and all six wallpapers. CI enforces a **20 MiB tracked-file budget**
+The theme checkout is about **20.5 MiB**, including the full-resolution desktop
+preview and all six wallpapers. CI enforces a **21 MiB tracked-file budget**
 and a **25 MiB Git pack budget**, including ordinary branches and tags.
 
 Source art, experiments, comparisons, rendering tools, and earlier Git history

@@ -24,11 +24,12 @@
         3840,
         2160
       ],
-      "sha256": "249f606cb708d708ba84e3a304375e9f29cacfb88070d9b6584a681e34eaa359",
-      "description": "Falling Code: native procedural glyph artwork, rendered directly at 4K with Cairo/Pango.",
-      "source": "https://github.com/BVisagie/omarchy-matrix-theme-archive/blob/28efe75dfea0819f45472c2fc98ededfcdccdedb/extras/backgrounds-code-4k/1-falling-code.jpg",
-      "renderer": "https://github.com/BVisagie/omarchy-matrix-theme-archive/blob/28efe75dfea0819f45472c2fc98ededfcdccdedb/scripts/render_rain.py",
-      "seed": 1999
+      "sha256": "7324665257aab7220d7f8e1aa2d44c47507a8976d5cba49aafe5901bb8e17e0c",
+      "description": "Falling Code: original dense green glyph streams, rendered natively at 4K before the wallpaper overhaul.",
+      "source": "https://github.com/BVisagie/omarchy-matrix-theme-archive/blob/01b09c3603db68f4623923cb79d82bc49369075a/backgrounds/1-falling-code.jpg",
+      "renderer": "https://github.com/BVisagie/omarchy-matrix-theme-archive/blob/01b09c3603db68f4623923cb79d82bc49369075a/scripts/render_rain.py",
+      "seed": 1999,
+      "restoration": "Exact pre-overhaul JPEG bytes; no regeneration, resizing, or recompression."
     },
     {
       "path": "backgrounds/2-mono-rain.jpg",
@@ -36,11 +37,12 @@
         3840,
         2160
       ],
-      "sha256": "9603bdeeeb1804dbdab8545aa5269a293bf466c300d6a9d7976efc4d9357bf12",
-      "description": "Mono Rain: native grayscale procedural glyph artwork, rendered directly at 4K with Cairo/Pango.",
-      "source": "https://github.com/BVisagie/omarchy-matrix-theme-archive/blob/28efe75dfea0819f45472c2fc98ededfcdccdedb/extras/backgrounds-code-4k/2-mono-rain.jpg",
-      "renderer": "https://github.com/BVisagie/omarchy-matrix-theme-archive/blob/28efe75dfea0819f45472c2fc98ededfcdccdedb/scripts/render_rain.py",
-      "seed": 1999
+      "sha256": "557a3ee37c25bc7e65263def646652237f264c812120385b3d45465653643f77",
+      "description": "Mono Rain: original grayscale rendition of the same dense glyph composition, rendered natively at 4K before the wallpaper overhaul.",
+      "source": "https://github.com/BVisagie/omarchy-matrix-theme-archive/blob/01b09c3603db68f4623923cb79d82bc49369075a/backgrounds/2-mono-rain.jpg",
+      "renderer": "https://github.com/BVisagie/omarchy-matrix-theme-archive/blob/01b09c3603db68f4623923cb79d82bc49369075a/scripts/render_rain.py",
+      "seed": 1999,
+      "restoration": "Exact pre-overhaul JPEG bytes; no regeneration, resizing, or recompression."
     },
     {
       "path": "backgrounds/3-green-street.jpg",
